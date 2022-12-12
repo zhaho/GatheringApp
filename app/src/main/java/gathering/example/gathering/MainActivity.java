@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                // CHeck user credentials
                 if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
                     Toast.makeText(MainActivity.this,"Login Successful!", Toast.LENGTH_SHORT).show();
                 }else{
